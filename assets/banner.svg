@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070d1e"/>
+      <stop offset="40%" stop-color="#0b1736"/>
+      <stop offset="100%" stop-color="#030814"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38ef7d"/>
+      <stop offset="100%" stop-color="#11998e"/>
+    </linearGradient>
+    <linearGradient id="shipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00b4d8" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#0077b6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#03045e" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="craneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb703"/>
+      <stop offset="100%" stop-color="#fb8500"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.8; transform: scale(1.08); }
+      }
+      @keyframes floatShip {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-6px) rotate(-0.5deg); }
+      }
+      @keyframes waveMove {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(-30px); }
+        100% { transform: translateX(0); }
+      }
+      @keyframes beaconBlink {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+      @keyframes streamMove {
+        0% { stroke-dashoffset: 100; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .radar-sweep {
+        transform-origin: 1060px 140px;
+        animation: radarSweep 8s linear infinite;
+      }
+      .ship-float {
+        animation: floatShip 6s ease-in-out infinite;
+        transform-origin: 900px 300px;
+      }
+      .wave-anim {
+        animation: waveMove 5s ease-in-out infinite;
+      }
+      .beacon-light {
+        animation: beaconBlink 2s ease-in-out infinite;
+      }
+      .pulse-ring {
+        transform-origin: 1060px 140px;
+        animation: pulseGlow 3s ease-in-out infinite;
+      }
+      .data-stream {
+        stroke-dasharray: 8, 8;
+        animation: streamMove 4s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Technical Grid Pattern -->
+  <g opacity="0.08">
+    <path d="M 0 50 L 1200 50 M 0 100 L 1200 100 M 0 150 L 1200 150 M 0 200 L 1200 200 M 0 250 L 1200 250 M 0 300 L 1200 300 M 0 350 L 1200 350" stroke="#00f2fe" stroke-width="1"/>
+    <path d="M 100 0 L 100 400 M 200 0 L 200 400 M 300 0 L 300 400 M 400 0 L 400 400 M 500 0 L 500 400 M 600 0 L 600 400 M 700 0 L 700 400 M 800 0 L 800 400 M 900 0 L 900 400 M 1000 0 L 1000 400 M 1100 0 L 1100 400" stroke="#00f2fe" stroke-width="1"/>
+  </g>
+
+  <!-- Digital Radar / Port Control Circle (Right) -->
+  <g>
+    <circle cx="1060" cy="140" r="90" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.2"/>
+    <circle cx="1060" cy="140" r="60" fill="none" stroke="#00f2fe" stroke-width="1" opacity="0.3"/>
+    <circle cx="1060" cy="140" r="30" fill="none" stroke="#00f2fe" stroke-width="1" opacity="0.4"/>
+    <circle cx="1060" cy="140" r="95" fill="none" stroke="#00f2fe" stroke-width="2" opacity="0.5" stroke-dasharray="6, 12" class="pulse-ring"/>
+    <line x1="970" y1="140" x2="1150" y2="140" stroke="#00f2fe" stroke-width="1" opacity="0.2"/>
+    <line x1="1060" y1="50" x2="1060" y2="230" stroke="#00f2fe" stroke-width="1" opacity="0.2"/>
+    
+    <!-- Radar Sweep Needle -->
+    <g class="radar-sweep">
+      <path d="M 1060 140 L 1145 100 A 90 90 0 0 0 1060 50 Z" fill="url(#cyanGrad)" opacity="0.25"/>
+      <line x1="1060" y1="140" x2="1145" y2="100" stroke="#00f2fe" stroke-width="2" filter="url(#softGlow)"/>
+    </g>
+    
+    <!-- Radar Blips -->
+    <circle cx="1090" cy="115" r="3.5" fill="#38ef7d" filter="url(#softGlow)" class="beacon-light"/>
+    <circle cx="1030" cy="165" r="3" fill="#ffb703" filter="url(#softGlow)"/>
+    <circle cx="1075" cy="175" r="2.5" fill="#00f2fe" filter="url(#softGlow)"/>
+    <text x="1060" y="250" fill="#00f2fe" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="2" opacity="0.7">AIS LIVE RADAR FEED</text>
+  </g>
+
+  <!-- Digital Data Stream Lines -->
+  <path d="M 680 180 C 780 150, 880 160, 1000 140" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.4" class="data-stream"/>
+  <path d="M 720 230 C 820 210, 920 220, 1030 180" fill="none" stroke="#38ef7d" stroke-width="1.5" opacity="0.35" class="data-stream"/>
+
+  <!-- Gantry Quay Cranes (STS) in Background -->
+  <g opacity="0.85" transform="translate(680, 100)">
+    <!-- Crane 1 -->
+    <g transform="translate(0, 0)">
+      <path d="M 20 180 L 35 30 L 130 30 L 145 180 M 35 80 L 130 80 M 35 130 L 130 130" fill="none" stroke="url(#craneGrad)" stroke-width="2.5"/>
+      <!-- Boom -->
+      <line x1="0" y1="30" x2="190" y2="30" stroke="url(#craneGrad)" stroke-width="3.5"/>
+      <path d="M 35 30 L 80 0 L 130 30" fill="none" stroke="url(#craneGrad)" stroke-width="2"/>
+      <line x1="80" y1="0" x2="175" y2="30" stroke="url(#craneGrad)" stroke-width="1.5" stroke-dasharray="3,3"/>
+      <!-- Spreader & Hoist -->
+      <line x1="150" y1="30" x2="150" y2="100" stroke="#00f2fe" stroke-width="1.5" opacity="0.8"/>
+      <rect x="140" y="100" width="20" height="12" fill="#00b4d8" rx="1" filter="url(#softGlow)"/>
+      <!-- Beacon -->
+      <circle cx="80" cy="0" r="3" fill="#ff4d4d" filter="url(#softGlow)" class="beacon-light"/>
+    </g>
+
+    <!-- Crane 2 -->
+    <g transform="translate(130, 20) scale(0.85)">
+      <path d="M 20 180 L 35 30 L 130 30 L 145 180 M 35 80 L 130 80 M 35 130 L 130 130" fill="none" stroke="#fb8500" stroke-width="2.5" opacity="0.6"/>
+      <line x1="0" y1="30" x2="180" y2="30" stroke="#fb8500" stroke-width="3" opacity="0.6"/>
+      <path d="M 35 30 L 80 0 L 130 30" fill="none" stroke="#fb8500" stroke-width="2" opacity="0.6"/>
+      <circle cx="80" cy="0" r="3" fill="#ff4d4d" filter="url(#softGlow)" class="beacon-light"/>
+    </g>
+  </g>
+
+  <!-- Container Ship & Cargo Blocks -->
+  <g class="ship-float" transform="translate(730, 220)">
+    <!-- Ship Hull -->
+    <path d="M 40 60 L 90 95 L 380 95 L 430 60 L 390 60 L 380 40 L 90 40 L 70 60 Z" fill="url(#shipGrad)" stroke="#334155" stroke-width="2"/>
+    <path d="M 90 95 L 380 95 L 370 105 L 110 105 Z" fill="#090d16"/>
+    
+    <!-- Bridge Superstructure -->
+    <rect x="330" y="5" width="45" height="35" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+    <rect x="335" y="10" width="35" height="6" fill="#00f2fe" opacity="0.7" filter="url(#softGlow)"/>
+    <line x1="352" y1="5" x2="352" y2="-10" stroke="#94a3b8" stroke-width="2"/>
+    <circle cx="352" cy="-10" r="2.5" fill="#38ef7d" filter="url(#softGlow)" class="beacon-light"/>
+
+    <!-- Container Stacks on Deck -->
+    <!-- Bay 1 -->
+    <rect x="95" y="25" width="30" height="14" fill="#00b4d8" stroke="#0077b6" rx="1"/>
+    <rect x="127" y="25" width="30" height="14" fill="#ffb703" stroke="#d48b00" rx="1"/>
+    <rect x="95" y="9" width="30" height="14" fill="#ef476f" stroke="#d62246" rx="1"/>
+    <rect x="127" y="9" width="30" height="14" fill="#06d6a0" stroke="#04a777" rx="1"/>
+
+    <!-- Bay 2 -->
+    <rect x="165" y="25" width="30" height="14" fill="#118ab2" stroke="#073b4c" rx="1"/>
+    <rect x="197" y="25" width="30" height="14" fill="#ffd166" stroke="#cfa432" rx="1"/>
+    <rect x="165" y="9" width="30" height="14" fill="#073b4c" stroke="#001d26" rx="1"/>
+    <rect x="197" y="9" width="30" height="14" fill="#ef476f" stroke="#d62246" rx="1"/>
+
+    <!-- Bay 3 -->
+    <rect x="235" y="25" width="30" height="14" fill="#38ef7d" stroke="#11998e" rx="1"/>
+    <rect x="267" y="25" width="30" height="14" fill="#00b4d8" stroke="#0077b6" rx="1"/>
+    <rect x="235" y="9" width="30" height="14" fill="#ffb703" stroke="#d48b00" rx="1"/>
+    <rect x="267" y="9" width="30" height="14" fill="#118ab2" stroke="#073b4c" rx="1"/>
+  </g>
+
+  <!-- Ocean Waves Overlay at Bottom -->
+  <g class="wave-anim">
+    <path d="M -50 330 Q 150 315, 350 330 T 750 330 T 1150 330 T 1550 330 L 1550 400 L -50 400 Z" fill="url(#waterGrad)" opacity="0.85"/>
+    <path d="M -50 350 Q 200 335, 450 350 T 950 350 T 1450 350 L 1450 400 L -50 400 Z" fill="#02091c" opacity="0.9"/>
+    <!-- Foam Highlights -->
+    <path d="M 0 330 Q 200 320, 400 330 T 800 330 T 1200 330" fill="none" stroke="#00f2fe" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Main Left Content / Typography -->
+  <g transform="translate(70, 75)">
+    <!-- Category Pill Tag -->
+    <g>
+      <rect x="0" y="0" width="340" height="28" rx="14" fill="#00f2fe" fill-opacity="0.12" stroke="#00f2fe" stroke-opacity="0.4" stroke-width="1.2"/>
+      <circle cx="14" cy="14" r="4" fill="#38ef7d" filter="url(#softGlow)" class="beacon-light"/>
+      <text x="28" y="18" fill="#00f2fe" font-family="'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="11.5" font-weight="700" letter-spacing="2">TERMINAL OPERATING SYSTEMS &amp; MARITIME TECH</text>
+    </g>
+
+    <!-- Main Title with Gradient and Glow -->
+    <g transform="translate(0, 70)">
+      <text x="0" y="0" fill="url(#cyanGrad)" font-family="'Segoe UI', Roboto, 'Montserrat', sans-serif" font-size="44" font-weight="900" letter-spacing="-0.5" filter="url(#softGlow)">AWESOME PORT</text>
+      <text x="0" y="48" fill="#ffffff" font-family="'Segoe UI', Roboto, 'Montserrat', sans-serif" font-size="42" font-weight="900" letter-spacing="-0.5">MANAGEMENT SYSTEM</text>
+    </g>
+
+    <!-- Subtitle & Value Proposition -->
+    <text x="0" y="185" fill="#94a3b8" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400">
+      <tspan x="0" dy="0">Curated ecosystem of enterprise </tspan>
+      <tspan fill="#38ef7d" font-weight="700">TOS Platforms</tspan>
+      <tspan>, SaaS solutions, </tspan>
+      <tspan x="0" dy="24">open-source tools, AIS decoders, berth planning &amp; smart port APIs.</tspan>
+    </text>
+
+    <!-- Interactive Badges within Banner -->
+    <g transform="translate(0, 245)">
+      <!-- Badge 1: TOS -->
+      <rect x="0" y="0" width="125" height="30" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1.2"/>
+      <text x="12" y="19" fill="#00f2fe" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">🚢 Port TOS</text>
+
+      <!-- Badge 2: SaaS & Open Source -->
+      <rect x="135" y="0" width="165" height="30" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1.2"/>
+      <text x="147" y="19" fill="#38ef7d" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">⚡ SaaS &amp; Open Source</text>
+
+      <!-- Badge 3: Yard & Vessel Planning -->
+      <rect x="310" y="0" width="170" height="30" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1.2"/>
+      <text x="322" y="19" fill="#ffb703" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">📦 Yard &amp; Berth AI</text>
+    </g>
+  </g>
+</svg>
