@@ -1,207 +1,105 @@
 # Awesome-Port-Management-System
 
-## Top Product Experience Management (PXM) Ecosystem
-
-
+## Top Port Management System Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Product Information Management (PIM), Product Data Enrichment, Syndication, Omnichannel Content & Digital Experience*  
-
+*Focused on Terminal Operating Systems (TOS), Port Operations, Yard & Vessel Planning, Gate Management & Maritime Logistics*  
 **Last updated: September 2026**
 
+This repository tracks notable **SaaS/commercial platforms** and **open-source projects** for **Port Management Systems** and **Terminal Operating Systems (TOS)**. These systems manage container and cargo movements, vessel and yard planning, gate operations, equipment control, and overall terminal efficiency in ports and intermodal facilities.
 
+**Examples** include NAVIS N4 (Kaleris), Tideworks, TOS+, PortX, PortPro, CargoSmart, Awake.AI, Portchain, Cargomatic Port, and related Kaleris offerings (the category leaders).
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Product Experience Management (PXM)** and **Product Information Management (PIM)**. These systems serve as the single source of truth for product data — enabling enrichment, governance, syndication, and consistent experiences across e-commerce, marketplaces, print, and digital channels.
-
-
-
-**Examples** include Salsify, Akeneo, inRiver (inriver), Contentserv, Plytix, Productsup, ChannelEngine, Perfion, Stibo STEP, Catsy, Pimcore, and Sales Layer (the category leaders).
-
-
-
-**Open-source emphasis**: PXM/PIM has solid open-source representation. **Pimcore** is a leading open-core platform combining PIM, MDM, DAM, and more. **Akeneo Community Edition**, **AtroPIM**, **UnoPim**, and related projects provide strong self-hostable alternatives. This section is heavily expanded with every major active project.
-
-
+**Open-source emphasis**: Production-grade, full-featured open-source Terminal Operating Systems comparable to commercial TOS platforms are extremely limited. Most available projects are educational prototypes, vessel-focused maritime systems, or supporting tools for data, planning, or general logistics. This section lists every significant relevant project found and notes the reality of the domain.
 
 Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
 
-
-
 ## Table of Contents
-
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
-
-
 
 ## SaaS/Hosted Platforms
 
+- **[NAVIS N4 (Kaleris)](https://kaleris.com/)**  
+  The most widely deployed terminal operating system for container terminals worldwide. Provides vessel planning, yard management, equipment control, gate operations, optimization modules, and extensive integration capabilities.
 
+- **[Tideworks](https://tideworks.com/)**  
+  Comprehensive marine and rail terminal solutions including the Mainsail TOS platform, planning tools, and reporting for terminal operators seeking flexible and modern architectures.
 
-- **[Salsify](https://www.salsify.com/)**  
+- **[TOS+ and related modern TOS platforms](https://www.tosplus.com/)**  
+  Newer or specialized terminal operating systems targeting improved usability, cloud deployment, and operational efficiency.
 
-  Leading Product Experience Management platform focused on product content syndication, retailer readiness, and omnichannel product experiences, especially strong in the U.S. market.
+- **[PortX, PortPro](https://www.portx.io/)**  
+  Port and terminal management solutions focused on operational visibility, workflow automation, and stakeholder coordination.
 
+- **[CargoSmart](https://www.cargosmart.com/)**  
+  Digital shipping and logistics platform offering visibility, documentation, and collaboration tools that often integrate with port and terminal operations.
 
+- **[Awake.AI](https://www.awake.ai/)**  
+  AI-powered port and maritime platform providing predictive insights, just-in-time arrival support, and operational optimization for ports and vessels.
 
-- **[Akeneo](https://www.akeneo.com/)**  
+- **[Portchain](https://www.portchain.com/)**  
+  Berth and resource planning platform that helps ports and terminals optimize vessel calls and reduce waiting times.
 
-  Popular PIM/PXM platform (with open-source roots) known for usability, product data governance, enrichment workflows, and a large ecosystem. Available in Community and commercial editions.
+- **[Cargomatic Port and related solutions](https://www.cargomatic.com/)**  
+  Platforms supporting port and drayage coordination, visibility, and logistics execution around terminal operations.
 
-
-
-- **[inRiver (inriver)](https://www.inriver.com/)**  
-
-  Enterprise PXM/PIM platform emphasizing supplier collaboration, product data governance, and syndication to retailers and channels.
-
-
-
-- **[Contentserv](https://www.contentserv.com/)**  
-
-  Product experience and master data platform supporting complex product information, marketing content, and multichannel publishing.
-
-
-
-- **[Plytix](https://www.plytix.com/)**  
-
-  Cloud PIM designed for mid-market and growing brands, focusing on ease of use, product data centralization, and channel distribution.
-
-
-
-- **[Productsup](https://www.productsup.com/)**  
-
-  Product-to-channel platform specializing in feed management, optimization, and syndication across marketplaces and advertising channels.
-
-
-
-- **[ChannelEngine](https://www.channelengine.com/)**  
-
-  Marketplace and channel management platform that connects product data and orders across multiple sales channels.
-
-
-
-- **[Perfion, Stibo STEP, Catsy, Sales Layer](https://www.stibosystems.com/)**  
-
-  Additional enterprise and mid-market PIM/MDM/PXM solutions covering structured product data, governance, and omnichannel distribution.
-
-
-
-- **[Other PXM / PIM platforms](https://www.salsify.com/)**  
-
-  Solutions such as Bluestone PIM, Syndigo, and related product content networks that support enrichment and syndication at scale.
-
-
+- **[Other TOS and port platforms](https://kaleris.com/)**  
+  Solutions from providers such as CyberLogitec OPUS, INFORM, TBA Group, and regional TOS vendors serving container, bulk, and multipurpose terminals.
 
 ## Open-Source GitHub Projects
 
+- **[Educational & prototype Port Managers](https://github.com/CirXe0N/PortManager)**  
+  Simple open-source examples and academic projects modeling basic ship, dock, and cargo management for learning purposes. Not production TOS systems.
 
+- **[Hackerfleet / HFOS](https://github.com/Hackerfleet/hfos)**  
+  Open-source maritime modular system focused on vessel board computers, geo-information, and collaborative maritime tooling rather than commercial terminal operations.
 
-- **[Pimcore](https://github.com/pimcore/pimcore)**  
+- **[Maritime data & vessel tools](https://github.com/search?q=maritime+OR+port+OR+terminal+operating+OR+TOS)**  
+  Community projects covering AIS data, vessel tracking, weather/tide information, NMEA handling, and related maritime software components.
 
-  Leading open-core platform for Product Experience Management. Combines PIM, MDM, DAM, CDP, DXP/CMS, and digital commerce capabilities in a highly flexible, API-driven framework. Widely used for complex product data and experience use cases.
+- **[Open Ships and NMEA-focused projects](https://openships.ai/)**  
+  Open-source maritime software oriented toward vessel networks, data flows, and onboard systems rather than full terminal operating systems.
 
+- **[General logistics & yard prototypes](https://github.com/search?q=yard+management+OR+container+terminal+OR+port+management)**  
+  Experimental or research-oriented codebases exploring container tracking, simple yard models, or port simulation.
 
-
-- **[Akeneo PIM Community Edition](https://github.com/akeneo/pim-community-dev)**  
-
-  Open-source Product Information Management system that forms the foundation of Akeneo’s commercial offerings. Supports product modeling, enrichment, and basic distribution workflows.
-
-
-
-- **[AtroPIM](https://github.com/atrocore/atropim)**  
-
-  Flexible open-source PIM system (GPLv3) with a modular architecture, configurable data models, and support for multi-channel product information management.
-
-
-
-- **[UnoPim](https://github.com/unopim/unopim)**  
-
-  Modern open-source PIM alternative focused on catalog enrichment, multilingual content, bulk updates, and omnichannel distribution, with emerging AI-assisted features.
-
-
-
-- **[OpenPIM and related community projects](https://github.com/search?q=PIM+OR+%22product+information+management%22+open+source)**  
-
-  Additional open-source or source-available PIM efforts aimed at simpler or specialized product data management needs.
-
-
-
-- **[PXM / syndication frameworks](https://github.com/search?q=product+experience+OR+PXM+OR+product+syndication)**  
-
-  Emerging source-available frameworks and tools for product data sync, enrichment, and channel distribution.
-
-
+- **[Simulation & optimization libraries](https://github.com/search?q=container+terminal+simulation+OR+port+optimization)**  
+  Academic and open-source tools for simulating terminal operations, berth allocation, or yard strategies that can support research and planning.
 
 ### Additional Strong Open-Source Options
 
-
-
-- **DAM companions**: Open-source digital asset management tools often paired with PIM for images, videos, and rich media.
-
-- **E-commerce platforms with PIM features**: Systems such as Saleor, Medusa, or ERPNext that include product catalog capabilities.
-
-- **Feed and channel tools**: Open-source or self-hosted utilities for transforming and publishing product feeds.
-
-- **Master Data Management components**: Broader open-source MDM projects that can serve product data use cases.
-
-- **API & integration layers**: Tools that help connect PIM systems to ERPs, e-commerce storefronts, and marketplaces.
-
-- Community connectors and enrichment scripts for popular open-source PIM platforms.
-
-
+- **AIS & vessel tracking stacks**: Libraries and platforms for processing Automatic Identification System data.
+- **GIS & mapping tools**: QGIS, PostGIS, and web mapping stacks used for port spatial data and visualization.
+- **Event-driven & messaging systems**: Kafka, NATS, or MQTT-based architectures that can underpin custom port data platforms.
+- **Optimization solvers**: Open-source mathematical programming tools applied to berth, crane, or yard optimization problems.
+- **ERP & logistics modules**: Broader open-source ERP systems (e.g., ERPNext, Odoo) that some smaller facilities adapt for basic cargo and resource tracking.
+- Research papers and reference implementations of terminal algorithms (often not production-ready software).
 
 **Frameworks for building custom systems**:  
-
-For most organizations seeking an open-source or open-core PXM/PIM foundation, start with **Pimcore** (broadest platform) or **Akeneo Community Edition** (focused PIM).  
-
-**AtroPIM** and **UnoPim** offer additional flexible, self-hostable options.  
-
-Commercial platforms (Salsify, inRiver, Contentserv, Stibo, etc.) remain preferred for large-scale retailer syndication, advanced governance, pre-built channel connectors, and enterprise support.  
-
-Many successful implementations combine an open-source PIM core with commercial syndication or experience layers.
-
-
+There is currently no widely adopted, production-ready open-source Terminal Operating System that can replace commercial platforms such as NAVIS N4 or Tideworks for medium-to-large container terminals.  
+Commercial TOS solutions dominate because of the extreme operational complexity, safety requirements, equipment integrations, real-time performance needs, and long implementation cycles involved.  
+Open-source components can support specific layers (data integration, visualization, simulation, optimization research, or vessel-side systems) and may be useful for smaller facilities, prototypes, or academic work.  
+Any custom or hybrid approach requires deep domain expertise, rigorous testing, and careful attention to safety and reliability.
 
 ## How to Contribute
 
-
-
 1. Fork the repo.
-
 2. Add/edit entries in `README.md` (follow existing format).
-
 3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
 4. Submit PR with a short explanation.
-
-
 
 Star the repo if you find it useful!
 
-
-
 ## Disclaimer
 
-
-
 - This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Product data platforms often contain commercially sensitive information and feed customer-facing channels. Proper access control, data quality processes, versioning, and security practices are essential.
-
-- Open-source and open-core solutions provide excellent flexibility and cost control but require implementation expertise, ongoing maintenance, and careful evaluation of licensing terms (especially open-core revenue thresholds).
-
-
+- Port and terminal systems are safety- and mission-critical. They control physical equipment, vessel movements, and high-value cargo. Any software used in live operations must meet stringent reliability, security, and operational standards.
+- Open-source projects listed here are primarily educational, research-oriented, or vessel-focused. They are not drop-in replacements for commercial Terminal Operating Systems. Deploying unproven software in live terminal environments carries significant operational and safety risk.
 
 ---
 
-
-
-**Made for product data managers, e-commerce teams, digital experience leaders, and solution architects.**  
-
-Let's advance open, flexible product information and experience management through strong open-source platforms.
+**Made for port operators, terminal managers, maritime technologists, and logistics innovators.**  
+Let's encourage greater openness, interoperability, and research collaboration in port and terminal technology where feasible.
