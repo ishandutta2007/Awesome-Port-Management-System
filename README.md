@@ -69,43 +69,43 @@ The table below catalogs premier commercial SaaS products and enterprise Termina
 
 The following list contains prominent open-source maritime software, AIS decoders, vessel telemetry tools, and terminal prototypes, sorted by **GitHub Star Count (descending)**. Each badge directly links to the repository's stargazers page:
 
-- **[OpenCPN](https://github.com/OpenCPN/OpenCPN)** [![GitHub stars](https://img.shields.io/github/stars/OpenCPN/OpenCPN?style=social&color=white)](https://github.com/OpenCPN/OpenCPN/stargazers)  
+- **[OpenCPN](https://github.com/OpenCPN/OpenCPN)** [![GitHub_Stars](https://img.shields.io/github/stars/OpenCPN/OpenCPN?style=social&color=white)](https://github.com/OpenCPN/OpenCPN/stargazers)  
   *Cross-platform shipborne chartplotter and navigation GUI supporting GPS/NMEA input, BSB/S57 raster and vector ENC charts, AIS message decoding, and waypoint autopilot routing.*
 
-- **[AIS-catcher](https://github.com/jvde-github/AIS-catcher)** [![GitHub stars](https://img.shields.io/github/stars/jvde-github/AIS-catcher?style=social&color=white)](https://github.com/jvde-github/AIS-catcher/stargazers)  
+- **[AIS-catcher](https://github.com/jvde-github/AIS-catcher)** [![GitHub_Stars](https://img.shields.io/github/stars/jvde-github/AIS-catcher?style=social&color=white)](https://github.com/jvde-github/AIS-catcher/stargazers)  
   *High-performance dual-channel Automatic Identification System (AIS) receiver and RF demodulator optimized for SDR hardware including RTL-SDR, Airspy, HackRF, and SDRplay.*
 
-- **[FlightAirMap](https://github.com/Ysurac/FlightAirMap)** [![GitHub stars](https://img.shields.io/github/stars/Ysurac/FlightAirMap?style=social&color=white)](https://github.com/Ysurac/FlightAirMap/stargazers)  
+- **[FlightAirMap](https://github.com/Ysurac/FlightAirMap)** [![GitHub_Stars](https://img.shields.io/github/stars/Ysurac/FlightAirMap?style=social&color=white)](https://github.com/Ysurac/FlightAirMap/stargazers)  
   *Open-source geospatial platform displaying live marine vessels and aircraft on interactive 2D/3D maps using AIS, ADS-B, and APRS telemetry data streams.*
 
-- **[FlightScnr_Pi](https://github.com/yashmulgaonkar/FlightScnr_Pi)** [![GitHub stars](https://img.shields.io/github/stars/yashmulgaonkar/FlightScnr_Pi?style=social&color=white)](https://github.com/yashmulgaonkar/FlightScnr_Pi/stargazers)  
+- **[FlightScnr_Pi](https://github.com/yashmulgaonkar/FlightScnr_Pi)** [![GitHub_Stars](https://img.shields.io/github/stars/yashmulgaonkar/FlightScnr_Pi?style=social&color=white)](https://github.com/yashmulgaonkar/FlightScnr_Pi/stargazers)  
   *Desktop flight and marine radar application for real-time vessel tracking and AIS traffic visualization powered by Raspberry Pi embedded displays.*
 
-- **[Signal K Server](https://github.com/SignalK/signalk-server)** [![GitHub stars](https://img.shields.io/github/stars/SignalK/signalk-server?style=social&color=white)](https://github.com/SignalK/signalk-server/stargazers)  
+- **[Signal K Server](https://github.com/SignalK/signalk-server)** [![GitHub_Stars](https://img.shields.io/github/stars/SignalK/signalk-server?style=social&color=white)](https://github.com/SignalK/signalk-server/stargazers)  
   *Modern open-source maritime data exchange standard and multiplexing server connecting NMEA 0183/2000, vessel sensors, and port communication interfaces.*
 
-- **[libais](https://github.com/schwehr/libais)** [![GitHub stars](https://img.shields.io/github/stars/schwehr/libais?style=social&color=white)](https://github.com/schwehr/libais/stargazers)  
+- **[libais](https://github.com/schwehr/libais)** [![GitHub_Stars](https://img.shields.io/github/stars/schwehr/libais?style=social&color=white)](https://github.com/schwehr/libais/stargazers)  
   *High-speed C++ and Python library for parsing and decoding binary Automatic Identification System (AIS) maritime position and static data messages.*
 
-- **[pyais](https://github.com/M0r13n/pyais)** [![GitHub stars](https://img.shields.io/github/stars/M0r13n/pyais?style=social&color=white)](https://github.com/M0r13n/pyais/stargazers)  
+- **[pyais](https://github.com/M0r13n/pyais)** [![GitHub_Stars](https://img.shields.io/github/stars/M0r13n/pyais?style=social&color=white)](https://github.com/M0r13n/pyais/stargazers)  
   *Modern, zero-dependency Python library for decoding and encoding raw NMEA AIVDM/AIVDO maritime vessel AIS data packets.*
 
-- **[AISmessages](https://github.com/tbsalling/aismessages)** [![GitHub stars](https://img.shields.io/github/stars/tbsalling/aismessages?style=social&color=white)](https://github.com/tbsalling/aismessages/stargazers)  
+- **[AISmessages](https://github.com/tbsalling/aismessages)** [![GitHub_Stars](https://img.shields.io/github/stars/tbsalling/aismessages?style=social&color=white)](https://github.com/tbsalling/aismessages/stargazers)  
   *Ultra-lightweight, zero-dependency Java message decoder for maritime navigation and safety messages compliant with ITU-R M.1371 standard.*
 
-- **[gr-ais](https://github.com/bistromath/gr-ais)** [![GitHub stars](https://img.shields.io/github/stars/bistromath/gr-ais?style=social&color=white)](https://github.com/bistromath/gr-ais/stargazers)  
+- **[gr-ais](https://github.com/bistromath/gr-ais)** [![GitHub_Stars](https://img.shields.io/github/stars/bistromath/gr-ais?style=social&color=white)](https://github.com/bistromath/gr-ais/stargazers)  
   *GNU Radio block implementation for over-the-air maritime Automatic Identification System (AIS) radio packet demodulation and vessel position reporting.*
 
-- **[Ais.Net](https://github.com/ais-dotnet/Ais.Net)** [![GitHub stars](https://img.shields.io/github/stars/ais-dotnet/Ais.Net?style=social&color=white)](https://github.com/ais-dotnet/Ais.Net/stargazers)  
+- **[Ais.Net](https://github.com/ais-dotnet/Ais.Net)** [![GitHub_Stars](https://img.shields.io/github/stars/ais-dotnet/Ais.Net?style=social&color=white)](https://github.com/ais-dotnet/Ais.Net/stargazers)  
   *Zero-allocation, high-throughput .NET Standard AIS decoder capable of processing millions of AIVDM/AIVDO sentences per second on a single CPU core.*
 
-- **[gnuais](https://github.com/rubund/gnuais)** [![GitHub stars](https://img.shields.io/github/stars/rubund/gnuais?style=social&color=white)](https://github.com/rubund/gnuais/stargazers)  
+- **[gnuais](https://github.com/rubund/gnuais)** [![GitHub_Stars](https://img.shields.io/github/stars/rubund/gnuais?style=social&color=white)](https://github.com/rubund/gnuais/stargazers)  
   *Open-source C demodulator and parser for AIS marine signals received via computer soundcards or software-defined radios.*
 
-- **[Hackerfleet HFOS](https://github.com/Hackerfleet/hfos)** [![GitHub stars](https://img.shields.io/github/stars/Hackerfleet/hfos?style=social&color=white)](https://github.com/Hackerfleet/hfos/stargazers)  
+- **[Hackerfleet HFOS](https://github.com/Hackerfleet/hfos)** [![GitHub_Stars](https://img.shields.io/github/stars/Hackerfleet/hfos?style=social&color=white)](https://github.com/Hackerfleet/hfos/stargazers)  
   *Modular maritime operating system for vessel board computers, geo-information mapping, and collaborative maritime tooling.*
 
-- **[PortManager](https://github.com/CirXe0N/PortManager)** [![GitHub stars](https://img.shields.io/github/stars/CirXe0N/PortManager?style=social&color=white)](https://github.com/CirXe0N/PortManager/stargazers)  
+- **[PortManager](https://github.com/CirXe0N/PortManager)** [![GitHub_Stars](https://img.shields.io/github/stars/CirXe0N/PortManager?style=social&color=white)](https://github.com/CirXe0N/PortManager/stargazers)  
   *Open-source educational prototype and simulation model for basic ship, dock, and cargo port operations management.*
 
 ---
